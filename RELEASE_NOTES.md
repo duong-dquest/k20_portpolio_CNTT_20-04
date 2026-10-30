@@ -29,10 +29,10 @@
 
 ## Commit liên quan
 
-**Chưa có – sinh viên bổ sung sau khi tạo commit.**
+`7048f21` – Rut gon README
 
 ## Hạn chế còn lại
 
-- Chưa có repository và URL GitHub Pages để xác minh trực tuyến.
+- Chưa có URL GitHub Pages để xác minh trực tuyến.
 - Form chỉ là mô phỏng tĩnh, không gửi email và không lưu dữ liệu.
-- Ngày cập nhật, SHA commit và kết quả kiểm tra trình duyệt cần sinh viên xác nhận.
+- Ngày cập nhật và kết quả kiểm tra trình duyệt cần sinh viên xác nhận.
