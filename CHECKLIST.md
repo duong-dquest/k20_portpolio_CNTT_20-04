@@ -4,20 +4,20 @@ Trạng thái mặc định cho các mục chưa có bằng chứng: **CHƯA KI�
 
 ## A. Kiểm tra Local
 
-- [ ] Trang chủ mở được — CHƯA KIỂM TRA
-- [ ] CSS hoạt động — CHƯA KIỂM TRA
-- [ ] Ảnh hiển thị — CHƯA KIỂM TRA
-- [ ] Điều hướng hoạt động — CHƯA KIỂM TRA
-- [ ] Form hoạt động — CHƯA KIỂM TRA
-- [ ] Trang kết quả mở được — CHƯA KIỂM TRA
+- [x] Trang chủ mở được — ĐÃ KIỂM TRA
+- [x] CSS hoạt động — ĐÃ KIỂM TRA
+- [x] Ảnh hiển thị — ĐÃ KIỂM TRA
+- [x] Điều hướng hoạt động — ĐÃ KIỂM TRA
+- [x] Form hoạt động — ĐÃ KIỂM TRA
+- [x] Trang kết quả mở được — ĐÃ KIỂM TRA
 - [ ] Responsive hoạt động trên điện thoại/máy tính bảng — CHƯA KIỂM TRA
 
 ## B. Kiểm tra Repository
 
-- [ ] Đủ mã nguồn — CHƯA KIỂM TRA
-- [ ] Đủ tài nguyên — CHƯA KIỂM TRA
-- [ ] Có lịch sử commit — CHƯA KIỂM TRA
-- [ ] README, AI_LOG, RELEASE_NOTES đầy đủ — CHƯA KIỂM TRA
+- [x] Đủ mã nguồn — ĐÃ KIỂM TRA
+- [x] Đủ tài nguyên — ĐÃ KIỂM TRA
+- [x] Có lịch sử commit — ĐÃ KIỂM TRA
+- [x] README, AI_LOG, RELEASE_NOTES đầy đủ — ĐÃ KIỂM TRA
 
 ## C. Kiểm tra GitHub Pages
 
@@ -28,8 +28,8 @@ Trạng thái mặc định cho các mục chưa có bằng chứng: **CHƯA KI�
 
 ## D. Đối chiếu
 
-- SHA commit: **CHƯA KIỂM TRA**
+- SHA commit: **ĐÃ KIỂM TRA** (`5f25a11`)
 - Nhánh xuất bản: **CHƯA KIỂM TRA**
 - Thư mục xuất bản: **CHƯA KIỂM TRA**
 - Ảnh chụp màn hình: **CHƯA KIỂM TRA**
-- Kết quả kiểm tra thực tế: **CHƯA KIỂM TRA**
+- Kết quả kiểm tra thực tế local: **ĐÃ KIỂM TRA**
