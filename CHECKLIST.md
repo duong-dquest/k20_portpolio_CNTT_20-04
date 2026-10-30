@@ -21,10 +21,10 @@ Trạng thái mặc định cho các mục chưa có bằng chứng: **CHƯA KI�
 
 ## C. Kiểm tra GitHub Pages
 
-- [ ] URL mở được — CHƯA KIỂM TRA
-- [ ] CSS và ảnh hoạt động — CHƯA KIỂM TRA
-- [ ] Các liên kết hoạt động — CHƯA KIỂM TRA
-- [ ] Nội dung khớp phiên bản trong Repository — CHƯA KIỂM TRA
+- [x] URL mở được — ĐÃ KIỂM TRA
+- [x] CSS và ảnh hoạt động — ĐÃ KIỂM TRA
+- [x] Các liên kết hoạt động — ĐÃ KIỂM TRA
+- [x] Nội dung khớp phiên bản trong Repository — ĐÃ KIỂM TRA
 
 ## D. Đối chiếu
 
