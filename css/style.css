@@ -1,0 +1,455 @@
+/* =========================================================
+   1. RESET & CẤU HÌNH CHUNG
+   ========================================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Đảm bảo ảnh không bao giờ tràn ra ngoài khung trên thiết bị nhỏ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f4f4f9;
+}
+
+/* =========================================================
+   2. HEADER & NAVIGATION
+   ========================================================= */
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #dddddd;
+  padding: 10px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Tự rớt dòng nếu màn hình điện thoại hẹp */
+  gap: 10px 15px;
+}
+
+.nav-site a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  font-size: 15px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-site a:hover {
+  color: #0066cc;
+  background-color: #eef5ff;
+  border-radius: 4px;
+}
+
+/* =========================================================
+   3. BỐ CỤC CHÍNH (MAIN & SECTIONS)
+   ========================================================= */
+main {
+  width: 92%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #222222;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 5px;
+}
+
+/* =========================================================
+   4. SECTION: GIỚI THIỆU
+   ========================================================= */
+#gioi-thieu {
+  text-align: center;
+}
+
+#gioi-thieu h1 {
+  color: #0066cc;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+#gioi-thieu p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+figure {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  background-color: #fafafa;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+figure img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 8px;
+}
+
+/* =========================================================
+   5. SECTION: SỞ THÍCH CÁ NHÂN
+   ========================================================= */
+.so-thich-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.the-so-thich {
+  flex: 1 1 240px;
+  max-width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-1 { border-color: #e67e22; }
+.card-2 { border-color: #1abc9c; }
+.card-3 { border-color: #3498db; }
+
+.the-so-thich img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.the-so-thich h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #222222;
+}
+
+.the-so-thich p {
+  font-size: 14px;
+  color: #555555;
+}
+
+/* =========================================================
+   6. SECTION: DỰ ÁN CÁ NHÂN (XỬ LÝ TRỰC TIẾP KHÔNG CẦN SỬA HTML)
+   ========================================================= */
+#du-an {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+/* Đưa h2 chiếm hết toàn bộ chiều rộng hàng đầu tiên */
+#du-an h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 5px;
+}
+
+.bai-du-an {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.bai-du-an h3 {
+  font-size: 16px;
+  color: #0066cc;
+  margin-bottom: 5px;
+}
+
+.bai-du-an p {
+  font-size: 14px;
+  color: #444;
+}
+
+/* =========================================================
+   7. SECTION: LỘ TRÌNH & LIÊN HỆ
+   ========================================================= */
+#lo-trinh ol {
+  margin-left: 20px;
+}
+
+#lo-trinh li {
+  margin-bottom: 15px;
+}
+
+#lo-trinh h3 {
+  font-size: 16px;
+}
+
+#lien-he form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#lien-he label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#lien-he input,
+#lien-he textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+#lien-he button {
+  padding: 10px;
+  background-color: #0066cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#lien-he button:hover {
+  background-color: #0052a3;
+}
+
+/* =========================================================
+   8. FOOTER
+   ========================================================= */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #dddddd;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* =========================================================
+   9. MEDIA QUERIES (RESPONSIVE THEO THIẾT BỊ)
+   ========================================================= */
+
+/* --- ĐIỆN THOẠI MÀN HÌNH NHỎ (Dưới 600px) --- */
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  section {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .nav-site {
+    gap: 5px;
+  }
+
+  .nav-site a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+
+  #gioi-thieu h1 {
+    font-size: 22px;
+  }
+
+  /* Sở thích và Dự án chuyển về 1 cột trên điện thoại */
+  .the-so-thich {
+    flex: 1 1 100%;
+  }
+
+  #du-an {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- IPAD / MÁY TÍNH BẢNG (601px - 1024px) --- */
+@media (min-width: 601px) and (max-width: 1024px) {
+  main {
+    width: 90%;
+  }
+
+  .the-so-thich {
+    flex: 1 1 45%;
+  }
+
+  #du-an {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* =========================================================
+   10. LAB 5 - TƯƠNG TÁC, FOCUS VÀ FORM DỄ DÙNG
+   ========================================================= */
+:root {
+  --focus-color: #8a2be2;
+  --surface-hover: #eef5ff;
+  --motion-fast: 180ms;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Vị trí focus rõ khi dùng Tab; không tắt outline mặc định. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 0.1875rem solid var(--focus-color);
+  outline-offset: 0.1875rem;
+}
+
+.nav-site a {
+  border-radius: 0.25rem;
+  transition: background-color var(--motion-fast) ease, color var(--motion-fast) ease;
+}
+
+.nav-site a:hover {
+  background-color: var(--surface-hover);
+}
+
+.nav-site a:active {
+  background-color: #dbeafe;
+}
+
+/* Transition đặt ở trạng thái gốc để cả hover và focus đều chuyển mượt. */
+.the-so-thich,
+.bai-du-an {
+  transition: transform var(--motion-fast) ease, box-shadow var(--motion-fast) ease, border-color var(--motion-fast) ease;
+}
+
+.the-so-thich:hover,
+.the-so-thich:focus-within,
+.bai-du-an:hover,
+.bai-du-an:focus-within {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.5rem 1.25rem rgb(0 0 0 / 10%);
+}
+
+.the-so-thich:hover,
+.the-so-thich:focus-within {
+  border-color: #0066cc;
+}
+
+#lien-he input,
+#lien-he textarea {
+  min-width: 0;
+  box-sizing: border-box;
+  transition: border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease;
+}
+
+#lien-he input:focus-visible,
+#lien-he textarea:focus-visible {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 0.1875rem rgb(0 102 204 / 15%);
+}
+
+#lien-he button,
+.button-link {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.625rem 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background-color: #0066cc;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--motion-fast) ease, transform var(--motion-fast) ease;
+}
+
+#lien-he button:hover,
+.button-link:hover {
+  background-color: #0052a3;
+}
+
+#lien-he button:active,
+.button-link:active {
+  transform: translateY(0.0625rem);
+}
+
+.field-help {
+  margin-top: -0.4rem;
+  color: #555;
+  font-size: 0.875rem;
+}
+
+.result-page {
+  max-width: 56.25rem;
+}
+
+.result-page h1 {
+  margin-bottom: 1rem;
+  color: #0066cc;
+}
+
+.result-page p {
+  margin-bottom: 1rem;
+}
+
+.button-link {
+  margin-top: 0.5rem;
+}
+
+/* Giữ bố cục và trạng thái rõ ràng, nhưng bỏ chuyển động nếu được yêu cầu. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .the-so-thich:hover,
+  .the-so-thich:focus-within,
+  .bai-du-an:hover,
+  .bai-du-an:focus-within,
+  #lien-he button:active,
+  .button-link:active {
+    transform: none;
+  }
+}

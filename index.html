@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Nguyễn Bình Dương</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="nav-site">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#so-thich">Sở thích</a>
+      <a href="#du-an">Dự án</a>
+      <a href="#lo-trinh">Lộ trình</a>
+      <a href="#lien-he">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="gioi-thieu">
+      <h1>Nguyễn Bình Dương</h1>
+      <p>
+        Chào mừng bạn đến với trang Portfolio cá nhân của tôi! Tôi là sinh viên Lớp 20-04, 
+        đang theo học môn Thiết kế web và triển khai hệ thống phần mềm. 
+        Tôi có niềm đam mê sáng tạo giao diện web hiện đại, tối ưu trải nghiệm người dùng bằng HTML5, CSS3.
+      </p>
+      <figure>
+        <img src="assets/avatar.png" alt="Ảnh đại diện Nguyễn Bình Dương" width="150" height="150">
+        <figcaption>Sinh viên: Nguyễn Bình Dương - MSV: 2071020054 (Lớp 20-04)</figcaption>
+      </figure>
+    </section>
+
+    <section id="so-thich">
+      <h2>Sở thích cá nhân</h2>
+      <div class="so-thich-container">
+        <article class="the-so-thich card-1">
+          <img src="assets/muisic2.png" alt="Nghe nhạc">
+          <h3>Nghe nhạc</h3>
+          <p>Thưởng thức các giai điệu Lofi, drill và EDM giúp giải tỏa căng thẳng sau giờ học và tăng mức độ tập trung khi làm việc.</p>
+        </article>
+
+        <article class="the-so-thich card-2">
+          <img src="assets/apollo.png" alt="Siêu xe Apollo EVO">
+          <h3>Siêu xe Apollo EVO</h3>
+          <p>Đam mê tìm hiểu về thiết kế khí động học cực đoan, khung gầm sợi carbon và khối động cơ V12 của mẫu siêu xe Apollo EVO.Nếu mỗi ngày tiết kiệm 300.000 VNĐ, bạn sẽ cần khoảng 776 đến 822 năm để có thể mua được siêu xe Apollo Project EVO  có giá bán khởi điểm từ 3 triệu Euro (tương đương khoảng 3,4 đến 3,5 triệu USD hoặc gần 85 đến 90 tỷ đồng tùy tỷ giá).😱</p>
+        </article>
+
+        <article class="the-so-thich card-3">
+          <img src="assets/minecraft.png" alt="Game Minecraft">
+          <h3>Game Minecraft</h3>
+          <p>Thỏa sức sáng tạo tư duy logic qua hệ thống Redstone và tự tay thiết kế, xây dựng các công trình kiến trúc độc đáo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="du-an">
+      <h2>Dự án cá nhân</h2>
+      <article class="bai-du-an">
+        <h3>Website Giới thiệu Siêu xe Apollo EVO</h3>
+        <p>Trang web giới thiệu dòng siêu xe hypercar với giao diện sang trọng, sử dụng bố cục Flexbox căn chỉnh giao diện.</p>
+      </article>
+      <article class="bai-du-an">
+        <h3>Trang Portfolio Cá Nhân HTML5</h3>
+        <p>Dự án Lab 2 chuẩn hóa cấu trúc HTML5 ngữ nghĩa (Semantic Web), tổ chức tài nguyên khoa học và xây dựng form liên hệ.</p>
+      </article>
+    </section>
+
+    <section id="lo-trinh">
+      <h2>Lộ trình học tập</h2>
+      <ol>
+        <li>
+          <h3>Giai đoạn 1: Nền tảng HTML5 & Semantic Web</h3>
+          <p>Nắm vững các thẻ chuẩn ngữ nghĩa, cấu trúc tài nguyên, xây dựng bảng và form nhập liệu.</p>
+        </li>
+        <li>
+          <h3>Giai đoạn 2: Tạo kiểu giao diện với CSS3</h3>
+          <p>Làm chủ Box Model, màu sắc, typography và các kỹ thuật căn chỉnh bố cục Flexbox.</p>
+        </li>
+        <li>
+          <h3>Giai đoạn 3: Responsive & Đồ án môn học</h3>
+          <p>Tối ưu hiển thị đa thiết bị (Mobile/Tablet/Desktop) và hoàn thiện hệ thống phần mềm web.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="lien-he">
+      <h2>Liên hệ với tôi</h2>
+      <form action="ket-qua.html" method="get">
+        <label for="ho-ten">Họ và tên:</label>
+        <input type="text" id="ho-ten" name="ho-ten" placeholder="Nhập họ và tên..." minlength="2" required aria-describedby="ho-ten-help">
+        <small id="ho-ten-help" class="field-help">Nhập ít nhất 2 ký tự.</small>
+
+        <label for="email">Địa chỉ Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required aria-describedby="email-help">
+        <small id="email-help" class="field-help">Cần nhập địa chỉ email hợp lệ. Không dùng email thật trong bài mô phỏng.</small>
+
+        <label for="noi-dung">Nội dung tin nhắn:</label>
+        <textarea id="noi-dung" name="noi-dung" rows="5" placeholder="Nhập nội dung tin nhắn..." minlength="10" maxlength="500" required aria-describedby="noi-dung-help"></textarea>
+        <small id="noi-dung-help" class="field-help">Nội dung từ 10 đến 500 ký tự. Dữ liệu chỉ dùng để mô phỏng, không gửi email.</small>
+
+        <button type="submit">Gửi tin nhắn (mô phỏng)</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nguyễn Bình Dương - MSV: 2071020054 - Lớp: 20-04. Tất cả các quyền được bảo lưu.</p>
+  </footer>
+
+</body>
+</html>git
