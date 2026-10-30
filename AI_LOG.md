@@ -6,10 +6,6 @@
 - Qua kiểm tra cấu trúc thực tế, dự án có đủ HTML, CSS và bốn ảnh trong `assets/`. Nội dung các file HTML/Markdown được đọc không đúng mã hóa trong môi trường kiểm tra, vì vậy đã chuẩn hóa lại nội dung bằng UTF-8.
 - Đoạn mô tả Apollo EVO trong `index.html` bị dính câu sau dấu chấm.
 
-## Nhận định ban đầu của sinh viên
-
-Nội dung nhận định cụ thể ngoài ba vấn đề được ghi trong file log cũ: **sinh viên cần bổ sung nếu có**.
-
 ## Công cụ AI đã sử dụng
 
 - Trợ lý AI trong VS Code để kiểm tra cấu trúc thư mục, đọc file, chỉnh sửa file và kiểm tra tĩnh.
@@ -43,4 +39,4 @@ Nội dung nhận định cụ thể ngoài ba vấn đề được ghi trong fi
 - Đã kiểm tra tĩnh cấu trúc file và các đường dẫn tương đối trong HTML: **ĐÃ KIỂM TRA**.
 - Đã kiểm tra sự tồn tại của bốn ảnh yêu cầu: **ĐÃ KIỂM TRA**.
 - Đã kiểm tra thuộc tính form `required`, `minlength`, `maxlength`, `type="email"` và `action="ket-qua.html"`: **ĐÃ KIỂM TRA**.
-- Kiểm tra trực tiếp trên trình duyệt, kiểm tra responsive bằng thiết bị thực, GitHub Pages và ảnh chụp kiểm chứng: **CHƯA KIỂM TRA** – sinh viên cần thực hiện và bổ sung kết quả.
+- Kiểm tra trực tiếp trên trình duyệt, kiểm tra responsive bằng thiết bị thực, GitHub Pages và ảnh chụp kiểm chứng: **CHƯA KIỂM TRA**.

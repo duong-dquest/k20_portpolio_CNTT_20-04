@@ -1,7 +1,7 @@
 # Release Notes – Portfolio v7
 
 - Phiên bản: Portfolio v7
-- Ngày cập nhật: **Sinh viên xác nhận**
+- Ngày cập nhật: 30/10/2026
 
 ## Các thay đổi chính
 
@@ -35,4 +35,4 @@
 
 - Chưa có URL GitHub Pages để xác minh trực tuyến.
 - Form chỉ là mô phỏng tĩnh, không gửi email và không lưu dữ liệu.
-- Ngày cập nhật và kết quả kiểm tra trình duyệt cần sinh viên xác nhận.
+- Kết quả kiểm tra trình duyệt chưa được ghi nhận trong tài liệu.
