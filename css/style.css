@@ -1,13 +1,11 @@
-/* =========================================================
-   1. RESET & CẤU HÌNH CHUNG
-   ========================================================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Đảm bảo ảnh không bao giờ tràn ra ngoài khung trên thiết bị nhỏ */
+
 img {
   max-width: 100%;
   height: auto;
@@ -21,9 +19,7 @@ body {
   background-color: #f4f4f9;
 }
 
-/* =========================================================
-   2. HEADER & NAVIGATION
-   ========================================================= */
+
 header {
   background-color: #ffffff;
   border-bottom: 2px solid #dddddd;
@@ -37,7 +33,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Tự rớt dòng nếu màn hình điện thoại hẹp */
+  flex-wrap: wrap; 
   gap: 10px 15px;
 }
 
@@ -56,9 +52,7 @@ header {
   border-radius: 4px;
 }
 
-/* =========================================================
-   3. BỐ CỤC CHÍNH (MAIN & SECTIONS)
-   ========================================================= */
+
 main {
   width: 92%;
   max-width: 900px;
@@ -81,9 +75,7 @@ h2 {
   padding-bottom: 5px;
 }
 
-/* =========================================================
-   4. SECTION: GIỚI THIỆU
-   ========================================================= */
+
 #gioi-thieu {
   text-align: center;
 }
@@ -119,9 +111,7 @@ figcaption {
   margin-top: 8px;
 }
 
-/* =========================================================
-   5. SECTION: SỞ THÍCH CÁ NHÂN
-   ========================================================= */
+
 .so-thich-container {
   display: flex;
   gap: 15px;
@@ -162,16 +152,14 @@ figcaption {
   color: #555555;
 }
 
-/* =========================================================
-   6. SECTION: DỰ ÁN CÁ NHÂN (XỬ LÝ TRỰC TIẾP KHÔNG CẦN SỬA HTML)
-   ========================================================= */
+
 #du-an {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 15px;
 }
 
-/* Đưa h2 chiếm hết toàn bộ chiều rộng hàng đầu tiên */
+
 #du-an h2 {
   grid-column: 1 / -1;
   margin-bottom: 5px;
@@ -196,9 +184,7 @@ figcaption {
   color: #444;
 }
 
-/* =========================================================
-   7. SECTION: LỘ TRÌNH & LIÊN HỆ
-   ========================================================= */
+
 #lo-trinh ol {
   margin-left: 20px;
 }
@@ -248,9 +234,7 @@ figcaption {
   background-color: #0052a3;
 }
 
-/* =========================================================
-   8. FOOTER
-   ========================================================= */
+
 footer {
   text-align: center;
   padding: 15px;
@@ -260,11 +244,7 @@ footer {
   font-size: 14px;
 }
 
-/* =========================================================
-   9. MEDIA QUERIES (RESPONSIVE THEO THIẾT BỊ)
-   ========================================================= */
 
-/* --- ĐIỆN THOẠI MÀN HÌNH NHỎ (Dưới 600px) --- */
 @media (max-width: 600px) {
   main {
     width: 95%;
@@ -289,7 +269,7 @@ footer {
     font-size: 22px;
   }
 
-  /* Sở thích và Dự án chuyển về 1 cột trên điện thoại */
+
   .the-so-thich {
     flex: 1 1 100%;
   }
@@ -299,7 +279,7 @@ footer {
   }
 }
 
-/* --- IPAD / MÁY TÍNH BẢNG (601px - 1024px) --- */
+
 @media (min-width: 601px) and (max-width: 1024px) {
   main {
     width: 90%;
@@ -313,9 +293,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/* =========================================================
-   10. LAB 5 - TƯƠNG TÁC, FOCUS VÀ FORM DỄ DÙNG
-   ========================================================= */
+
 :root {
   --focus-color: #8a2be2;
   --surface-hover: #eef5ff;
@@ -349,7 +327,7 @@ textarea:focus-visible {
   background-color: #dbeafe;
 }
 
-/* Transition đặt ở trạng thái gốc để cả hover và focus đều chuyển mượt. */
+
 .the-so-thich,
 .bai-du-an {
   transition: transform var(--motion-fast) ease, box-shadow var(--motion-fast) ease, border-color var(--motion-fast) ease;
@@ -431,7 +409,6 @@ textarea:focus-visible {
   margin-top: 0.5rem;
 }
 
-/* Giữ bố cục và trạng thái rõ ràng, nhưng bỏ chuyển động nếu được yêu cầu. */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
